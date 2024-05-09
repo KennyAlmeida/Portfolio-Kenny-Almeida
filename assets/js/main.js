@@ -1,3 +1,6 @@
+const checkbox = document.querySelector(".theme-switch");
+  checkbox.click();
+
 //Menu
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
@@ -43,12 +46,13 @@ class MobileNavbar {
   mobileNavbar.init();
 
 
-  const checkbox = document.getElementById("checkbox")
-checkbox.addEventListener("change", () => {
-  document.body.classList.toggle("white")
-  const header = document.querySelector("header");
-  header.classList.toggle("white");
-})
+  
+
+  checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("white")
+    const header = document.querySelector("header");
+    header.classList.toggle("white");
+  })
 
 function typeWrite(elemento){
   const textoArray = elemento.innerHTML.split('');
