@@ -642,7 +642,6 @@ header.white .wrapper nav .nav-list li a:hover{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-            flex-direction: column;
   }
   
   
@@ -1717,5 +1716,9 @@ footer .copyright{
   
   .card-conhecimentos{
     width: 25%; 
+    }
+
+    #sobreMim{
+      flex-direction: column;
     }
 }
